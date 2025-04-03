@@ -18,3 +18,12 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 18:45:13.587
+!MESSAGE [Info]	ESLint server running in node v22.11.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 18:45:13.797
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.6.3 from path "C:\inswave\JAVA\utils\eclipse-jee-2024-12-R-win32-x86_64\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.4.202411181846\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 18:45:13.823
+!MESSAGE [Info]	Typescript Server version info: {version=5.6.3, source=user-setting}
