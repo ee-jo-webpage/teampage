@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+## intelij code style
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/git_toolbox_blame.xml
