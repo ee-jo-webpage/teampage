@@ -7,94 +7,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="header-text">
-                    <h4>More About Us</h4>
-                    <h1>About Us</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<%--<section class="get-info">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row">--%>
-<%--            <div class="col-lg-6">--%>
-<%--&lt;%&ndash;                <div class="left-image">&ndash;%&gt;--%>
-<%--                    <video id="sunflower-video" style = "width : 100%"  autoplay muted loop playsinline>--%>
-<%--                        <source src="assets/videos/sunflowers.mp4" type="video/mp4">--%>
-<%--                    </video>--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--            </div>--%>
-<%--            <div class="col-lg-6 align-self-center">--%>
-<%--                <div class="section-heading">--%>
-<%--                    <h6>Playlist</h6>--%>
-<%--                    <h4>    Read More <em>About Us</em></h4>--%>
-<%--                    <p>You are allowed 100% to download and use our templates from TemplateMo for your commercial or business websites. You are <strong>not allowed</strong> to redistribute this template ZIP file on any other website without a permission from us.<br><br>There are some unethical people on this planet earth who copied our templates so easily without any permission from us and then reposted on their websites. Their Karma will hit them really hard. Yeah, that is right.</p>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
-
-<section class="get-info">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <video id="video-collection" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" autoplay muted loop playsinline>
-                    <source src="assets/videos/sunflowers.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="col-lg-4 align-self-center">
-                <div class="section-heading" style = "margin-top : 0px; margin-bottom : 20px; padding-top : 0px;">
-                    <h6>Playlist</h6>
-                    <h4>Our <em>Video Collection</em></h4>
-                </div>
-                <div class="playlist-container" style="max-height: 350px; overflow-y: auto;">
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/sunflowers.mp4', 'Sunflowers Video')">
-                        <div class="mr-3" style="min-width: 50px;">
-                            <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-0">Sunflowers Video</h6>
-                            <small class="text-muted">01:30 • Nature</small>
-                        </div>
-                    </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('https://www.youtube.com/watch?v=6VsErZsXcuU', 'Educational Content')">
-                        <div class="mr-3" style="min-width: 50px;">
-                            <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-0">Educational Content</h6>
-                            <small class="text-muted">03:45 • Education</small>
-                        </div>
-                    </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/book.mp4', 'Course Introduction')">
-                        <div class="mr-3" style="min-width: 50px;">
-                            <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-0">Course Introduction</h6>
-                            <small class="text-muted">02:15 • Courses</small>
-                        </div>
-                    </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/tennis.mp4', 'Student Testimonials')">
-                        <div class="mr-3" style="min-width: 50px;">
-                            <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-0">Student Testimonials</h6>
-                            <small class="text-muted">04:10 • Testimonials</small>
-                        </div>
-                    </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/steak.mp4', 'Campus Tour')">
-                        <div class="mr-3" style="min-width: 50px;">
-                            <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-0">Campus Tour</h6>
-                            <small class="text-muted">05:30 • Facilities</small>
-                        </div>
-                    </div>
+                    <h4>Our Team</h4>
+                    <h1>Our Team <em>Members</em></h1>
                 </div>
             </div>
         </div>
@@ -104,12 +18,6 @@
 <section class="our-team">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="section-heading">
-                    <h6>Our Team</h6>
-                    <h4>Our Team <em>Members</em></h4>
-                </div>
-            </div>
             <div class="col-lg-10 offset-lg-1">
                 <div class="naccs">
                     <div class="tabs">
@@ -240,134 +148,9 @@
     </div>
 </section>
 
-<section class="simple-cta">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 offset-lg-1">
-                <div class="left-image">
-                    <img src="assets/images/cta-left-image.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-5 align-self-center">
-                <h6>Get the sale right now!</h6>
-                <h4>Up to 50% OFF For 1+ courses</h4>
-                <p>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
-                <div class="white-button">
-                    <a href="contact-us.html">View Courses</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h6>Testimonials</h6>
-                    <h4>What They <em>Think</em></h4>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p>“Food & truck tumeric hoodie chiasore bit-
-                            ters retroed gentrify street portland.”</p>
-                        <h4>Andrea Furistos</h4>
-                        <span>CEO-FOUNDER</span>
-                        <img src="assets/images/quote.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="contact-us our-office">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="left-info">
-                    <div class="section-heading">
-                        <h6>Our Office</h6>
-                        <h4>Get closer to <em>EduWell</em></h4>
-                    </div>
-                    <p>Trust fund nocore broklyn humblebrag mustache
-                        pork kitsch, bicycle rights hexagon schlitz keytar palo is
-                        santo drinking vinegar fam ramps. <br><br>Four dollar toast and
-                        edison bulb vinyl, listicle hashtag pug scenester typewrit
-                        er yuccie street artboard or whatever to fill place.</p>
-                    <ul>
-                        <li>- Selfies you probably haven't heard of them.</li>
-                        <li>- Tousled cold-pressed chicharrones yuccie.</li>
-                        <li>- Pabst iPhone chartreuse shabby chic tumeric.</li>
-                        <li>- Scenester normcore mumblecore snackwave.</li>
-                    </ul>
-                    <div class="main-button-gradient">
-                        <a href="our-services.html">Our Services</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div id="video">
-                    <div class="thumb">
-                        <img src="assets/images/video-thumb.jpg" alt="">
-                        <div class="play-button">
-                            <a rel="nofollow" href="https://www.youtube.com/templatemo" target="_blank"><i class="fa fa-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-12">
                 <ul class="social-icons">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
