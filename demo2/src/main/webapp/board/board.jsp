@@ -2,207 +2,128 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>게시판</title>
+    <meta charset="UTF-8"/>
+    <title>Board</title>
 
-  <jsp:include page="../common/head.jsp"/>
-  <!-- 부트스트랩 기본 스타일 적용 -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- 사용자 정의 스타일 적용 -->
-  <link href="./css/custom.css" rel="stylesheet" />
+    <!-- 공통 헤더 include -->
+    <jsp:include page="../common/head.jsp"/>
+
+    <!-- 사용자 정의 스타일 적용 -->
+    <link href="./css/custom.css" rel="stylesheet"/>
 </head>
 
-<!-- board-section -->
-<body class="bg-white p-4">
-  <jsp:include page="../common/header.jsp"/>
-  <section id="board-section">
-    <div class="container">
-      <h2 class="mb-4">게시판</h2>
+<body>
 
-      <!-- 글쓰기 버튼 (클릭 시 글쓰기 모달 호출) -->
-      <div class="mb-3 text-end">
-        <button
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#createModal">
-          글쓰기
-        </button>
-        <!-- data-bs-toggle="modal": 모달 기능 활성화 속성 -->
-        <!-- data-bs-target="#createModal": id값으로 모달 매핑 -->
-      </div>
+    <jsp:include page="../common/header.jsp"/>
 
-      <!-- 글쓰기 모달
-          .fade: 페이드 애니메이션 적용
-          .modal-dialog: 모달크기, 정렬 (기본 중앙)
-          data-bs-dismiss="modal": 클릭시 현재 모달 종료
-          tabindex="-1": 모달 바깥으로 포커스 이동 차단
-          aria-hidden="true": 모달이 처음에 보이지 않도록 지정
-      -->
-      <div
-              class="modal fade"
-              id="createModal"
-              tabindex="-1"
-              aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form id="create-post-form">
-              <!-- 글쓰기 폼 -->
-              <div class="modal-header">
-                <h5 class="modal-title">게시글 작성</h5>
-                <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <!-- 제목 입력 -->
-                <div class="mb-3">
-                  <label for="create-title" class="form-label">제목</label>
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="create-title"
-                          required />
-                </div>
-                <!-- 작성자 입력 -->
-                <div class="mb-3">
-                  <label for="create-author" class="form-label">작성자</label>
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="create-author"
-                          required />
-                </div>
-                <!-- 내용 입력 -->
-                <div class="mb-3">
-                  <label for="create-content" class="form-label">내용</label>
-                  <textarea
-                          class="form-control"
-                          id="create-content"
-                          rows="4"
-                          required></textarea>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">저장</button>
-                <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
-                  취소
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div id="board-section">
+        <section class="boxed defaultbox boxed_shadow">
 
-      <!-- 수정 모달 -->
-      <div class="modal fade" id="postModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form id="update-post-form">
-              <!-- 수정 폼 -->
-              <div class="modal-header">
-                <h5 class="modal-title">게시글 수정</h5>
-                <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                <input type="hidden" id="post-id" />
-                <!-- 수정 시 게시글 ID 보관 -->
-                <div class="mb-3">
-                  <label for="title" class="form-label">제목</label>
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="title"
-                          required />
-                </div>
-                <div class="mb-3">
-                  <label for="author" class="form-label">작성자</label>
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="author"
-                          readonly />
-                </div>
-                <div class="mb-3">
-                  <label for="content" class="form-label">내용</label>
-                  <textarea
-                          class="form-control"
-                          id="content"
-                          rows="4"
-                          required></textarea>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">저장</button>
-                <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
-                  취소
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+            <h1>DOS Board</h1>
 
-      <!-- 상세보기 모달 -->
-      <div
-              class="modal fade"
-              id="detailModal"
-              tabindex="-1"
-              aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">게시글 상세</h5>
-              <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"></button>
+            <!-- 글쓰기 버튼 -->
+            <div class="btn-wrapper">
+                <div id="openCreateModal" class="btn-div">[ 글쓰기 ]</div>
             </div>
-            <div class="modal-body">
-              <p><strong>제목:</strong> <span id="detail-title"></span></p>
-              <p><strong>작성자:</strong> <span id="detail-author"></span></p>
-              <p><strong>내용:</strong></p>
-              <p id="detail-content"></p>
+            <!-- 게시판 -->
+            <div class="boxed defaultbox">
+                <table class="boxed defaultbox boxed_shadow">
+                    <thead>
+                    <tr>
+                        <th style="width: 15%; text-align: center;"><strong>글번호</strong></th>
+                        <th style="width: 50%; text-align: center;"><strong>제목</strong></th>
+                        <th style="width: 15%; text-align: center;"><strong>작성자</strong></th>
+                        <th style="width: 20%; text-align: center;"><strong>관리</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody id="post-list"></tbody>
+                </table>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- 게시글 테이블 -->
-      <table
-              class="table table-sm align-middle table-hover table-striped table-borderless">
-        <thead>
-        <tr class="table-primary">
-          <!-- 부트스트랩 테이블 헤더 강조 -->
-          <th class="text-center w-5">글번호</th>
-          <th class="text-start w-75">제목</th>
-          <th class="text-center w-20">작성자</th>
-          <th class="text-center">관리</th>
-        </tr>
-        </thead>
-        <tbody id="post-list"></tbody>
-        <!-- 게시글 목록이 동적으로 들어가는 tbody -->
-      </table>
+            <div class="pagination-wrapper" id="pagination"></div>
 
-      <!-- 페이지네이션 (부트스트랩 nav + ul 구조) -->
-      <nav>
-        <ul id="pagination" class="pagination justify-content-center"></ul>
-      </nav>
+            <!-- 글쓰기 모달 -->
+            <div class="modal-overlay" id="createModal">
+                <div class="modal-box">
+                    <form id="create-post-form">
+                        <h3><strong>글쓰기</strong></h3>
+                        <label for="create-title">제목</label><input id="create-title" placeholder="제목" required/>
+                        <label for="create-author">작성자</label><input id="create-author" placeholder="작성자" required/>
+                        <label for="create-content">내용</label><textarea
+                            id="create-content"
+                            rows="4"
+                            placeholder="내용"
+                            required></textarea>
+                        <div class="modal-footer">
+                            <div id="submitCreateForm" class="btn-div">[ 저장 ]</div>
+                            <div id="closeCreateModal" class="btn-div">[ 취소 ]</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 수정 모달 -->
+            <div class="modal-overlay" id="editModal">
+                <div class="modal-box">
+                    <form id="edit-post-form">
+                        <h3>게시글 수정</h3>
+                        <input type="hidden" id="edit-id"/>
+                        <label for="edit-title">제목</label><input id="edit-title" placeholder="제목" required/>
+                        <label for="edit-author">작성자</label><input id="edit-author" placeholder="작성자" readonly/>
+                        <label for="edit-content">내용</label><textarea
+                            id="edit-content"
+                            rows="4"
+                            placeholder="내용"
+                            required></textarea>
+                        <div class="modal-footer">
+                            <div id="submitEditForm" class="btn-div">[ 수정 ]</div>
+                            <div id="closeEditModal" class="btn-div">[ 취소 ]</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 삭제 확인 모달 -->
+            <div class="modal-overlay" id="deleteModal">
+                <div class="modal-box">
+                    <h3>정말 삭제하시겠습니까?</h3>
+                    <div class="modal-footer">
+                        <div id="confirmDelete" class="btn-div">[ 삭제 ]</div>
+                        <div id="cancelDelete" class="btn-div">[ 취소 ]</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 상세보기 모달 -->
+            <div class="modal-overlay" id="detailModal">
+                <div class="modal-box">
+                    <h3>게시글 상세보기</h3>
+                    <div class="modal-body">
+                        <div style="margin-bottom: 10px">
+                            <strong>제목:</strong> <span id="detail-title"></span>
+                        </div>
+                        <div style="margin-bottom: 10px">
+                            <strong>작성자:</strong> <span id="detail-author"></span>
+                        </div>
+                        <div style="margin-bottom: 10px"><strong>내용</strong></div>
+                        <div
+                                id="detail-content"
+                                style="white-space: pre-wrap;
+                                       border: 1px solid #ff0;
+                                       padding: 8px;">
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin-top: 20px; display: flex; justify-content: flex-end">
+                        <div id="closeDetailModal" class="btn-div">[ 닫기 ]</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
-  </section>
 
-  <!-- 부트스트랩 JS 기능 포함 (모달, 토글 등) -->
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- 사용자 정의 기능 포함 (게시글 목록, 수정, 삭제 등 처리) -->
-  <script src="./js/custom.js"></script>
+    <!-- 사용자 정의 기능 포함 (게시글 목록, 수정, 삭제 등 처리) -->
+    <script src="./js/custom.js"></script>
+
 </body>
 </html>
