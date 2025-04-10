@@ -1,31 +1,41 @@
-// 게시글 데이터 초기화
-let posts = Array.from({ length: 30 }, (_, i) => ({
-    id: i + 1,
-    title: `게시글 제목 ${i + 1}`,
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit...`,
-    author: `작성자${(i % 5) + 1}`,
-}));
-
+let posts = [];
+const names = ["성민", "민지", "승준", "현우", "소희"];
+let filteredPosts = null;
 const postsPerPage = 10;
 let currentPage = 1;
 let deleteTargetId = null;
 
 // =========================
+// 데이터 불러오기
+// =========================
+async function loadPosts() {
+    try {
+        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const data = await res.json();
+        posts = data.map(p => ({
+            id: p.id,
+            title: p.title,
+            content: p.body,
+            author: names[p.userId % names.length]
+        }));
+    } catch (err) {
+        console.log("로딩 실패", err);
+        alert("게시글을 불러오는 데 실패했습니다.");
+    }
+}
+
+// =========================
 // 공통 유틸 함수
 // =========================
-
-/* 모달 열고/닫기 */
 function toggleModal(id, show = true) {
     const modal = document.getElementById(id);
     if (modal) modal.style.display = show ? "flex" : "none";
 }
 
-/* post ID로 게시글 찾기 */
 function getPostById(id) {
     return posts.find(p => p.id === id);
 }
 
-/* form 안의 input/textarea 값 객체로 추출 */
 function getFormData(formId) {
     const form = document.getElementById(formId);
     const data = {};
@@ -37,45 +47,49 @@ function getFormData(formId) {
     return data;
 }
 
-/* 폼 입력 초기화 */
 function clearForm(formId) {
     const form = document.getElementById(formId);
     if (form) form.reset();
 }
 
 // =========================
-// 게시글 목록 렌더링
+// 게시글 렌더링
 // =========================
-
 function renderPosts() {
     const tbody = document.getElementById("post-list");
     tbody.innerHTML = "";
 
-    const sorted = [...posts].sort((a, b) => b.id - a.id);
+    const source = filteredPosts !== null ? filteredPosts : posts;
+    const sorted = [...source].sort((a, b) => b.id - a.id);
     const current = sorted.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
 
-    current.forEach(post => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-            <td>${post.id}</td>
-            <td style="cursor:pointer; text-decoration: underline;" onclick="showDetailModal(${post.id})">${post.title}</td>
-            <td>${post.author}</td>
-            <td>
-                <div class="btn-div" onclick="openEditModal(${post.id})">[ 수정 ]</div>
-                <div class="btn-div" onclick="openDeleteModal(${post.id})">[ 삭제 ]</div>
-            </td>`;
-        tbody.appendChild(tr);
-    });
+    if (current.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="4">검색 결과가 없습니다.</td></tr>`;
+    } else {
+        current.forEach(post => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${post.id}</td>
+                <td style="cursor:pointer; text-decoration: underline;" onclick="showDetailModal(${post.id})">${post.title}</td>
+                <td>${post.author}</td>
+                <td>
+                    <div class="btn-div" onclick="openEditModal(${post.id})">[ 수정 ]</div>
+                    <div class="btn-div" onclick="openDeleteModal(${post.id})">[ 삭제 ]</div>
+                </td>`;
+            tbody.appendChild(tr);
+        });
+    }
+
+    renderPagination();
 }
 
-// =========================
-// 페이지네이션 렌더링
-// =========================
-
 function renderPagination() {
-    const pageCount = Math.ceil(posts.length / postsPerPage);
+    const source = filteredPosts !== null ? filteredPosts : posts;
+    const pageCount = Math.ceil(source.length / postsPerPage);
     const container = document.getElementById("pagination");
     container.innerHTML = "";
+
+    if (pageCount === 0) return;
 
     const createPageButton = (label, onClick) => {
         const btn = document.createElement("div");
@@ -89,7 +103,6 @@ function renderPagination() {
         if (currentPage > 1) {
             currentPage--;
             renderPosts();
-            renderPagination();
         }
     }));
 
@@ -97,7 +110,6 @@ function renderPagination() {
         container.appendChild(createPageButton(`[ ${i} ]`, () => {
             currentPage = i;
             renderPosts();
-            renderPagination();
         }));
     }
 
@@ -105,15 +117,13 @@ function renderPagination() {
         if (currentPage < pageCount) {
             currentPage++;
             renderPosts();
-            renderPagination();
         }
     }));
 }
 
 // =========================
-// 상세 보기 모달
+// 상세 모달
 // =========================
-
 function showDetailModal(id) {
     const post = getPostById(id);
     if (!post) return;
@@ -127,9 +137,8 @@ function showDetailModal(id) {
 document.getElementById("closeDetailModal").onclick = () => toggleModal("detailModal", false);
 
 // =========================
-// 글쓰기 모달
+// 글쓰기
 // =========================
-
 document.getElementById("openCreateModal").onclick = () => toggleModal("createModal", true);
 document.getElementById("closeCreateModal").onclick = () => toggleModal("createModal", false);
 
@@ -144,14 +153,13 @@ document.getElementById("submitCreateForm").onclick = () => {
 
     clearForm("create-post-form");
     toggleModal("createModal", false);
+    filteredPosts = null; // 새 글 작성 시 검색 상태 초기화
     renderPosts();
-    renderPagination();
 };
 
 // =========================
-// 수정 모달
+// 수정
 // =========================
-
 function openEditModal(id) {
     const post = getPostById(id);
     if (!post) return;
@@ -163,32 +171,27 @@ function openEditModal(id) {
 
     toggleModal("editModal", true);
 }
-
 document.getElementById("closeEditModal").onclick = () => toggleModal("editModal", false);
 
 document.getElementById("submitEditForm").onclick = () => {
     const id = parseInt(document.getElementById("edit-id").value, 10);
     const { title, content } = getFormData("edit-post-form");
-
     const post = getPostById(id);
     if (post) {
         post.title = title;
         post.content = content;
     }
-
     toggleModal("editModal", false);
     renderPosts();
 };
 
 // =========================
-// 삭제 모달
+// 삭제
 // =========================
-
 function openDeleteModal(id) {
     deleteTargetId = id;
     toggleModal("deleteModal", true);
 }
-
 document.getElementById("cancelDelete").onclick = () => toggleModal("deleteModal", false);
 
 document.getElementById("confirmDelete").onclick = () => {
@@ -196,16 +199,37 @@ document.getElementById("confirmDelete").onclick = () => {
         posts = posts.filter(p => p.id !== deleteTargetId);
         deleteTargetId = null;
         toggleModal("deleteModal", false);
+        filteredPosts = null; // 삭제 후 전체 목록 기준 렌더링
         renderPosts();
-        renderPagination();
     }
+};
+
+// =========================
+// 검색
+// =========================
+function filterPosts(keyword) {
+    const lower = keyword.trim().toLowerCase();
+    if (!lower) return posts;
+
+    return posts.filter(p =>
+        p.title.toLowerCase().includes(lower) ||
+        p.author.toLowerCase().includes(lower) ||
+        p.content.toLowerCase().includes(lower)
+    );
+}
+
+document.getElementById("search-button").onclick = () => {
+    const keyword = document.getElementById("search-input").value.trim();
+
+    filteredPosts = keyword === "" ? null : filterPosts(keyword);
+    currentPage = 1;
+    renderPosts();
 };
 
 // =========================
 // 초기 실행
 // =========================
-
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadPosts();
     renderPosts();
-    renderPagination();
 });
