@@ -71,7 +71,7 @@
     </div>
 </section>
 
-<%--<jsp:include page = "footer.jsp"></jsp:include>--%>
+<jsp:include page = "footer.jsp"></jsp:include>
 
 <!-- Scripts -->
 <!-- Bootstrap core JavaScript -->
