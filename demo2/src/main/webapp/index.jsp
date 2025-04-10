@@ -26,27 +26,27 @@
                             <div class="col-lg-12">
                                 <div class="menu">
                                     <div class="active">
-                                        <img src="assets/images/lego-sungmin.png" alt="">
+                                        <img src="index/images/lego-sungmin.png" alt="">
                                         <h4>김성민</h4>
                                         <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/lego-hyunwoo.png" alt="">
+                                        <img src="index/images/lego-hyunwoo.png" alt="">
                                         <h4>김현우</h4>
                                         <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/lego-minji.png" alt="">
+                                        <img src="index/images/lego-minji.png" alt="">
                                         <h4>우민지</h4>
                                         <span>TEAM-LEADER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/lego-sohee.png" alt="">
+                                        <img src="index/images/lego-sohee.png" alt="">
                                         <h4>임소희</h4>
                                         <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/lego-seungjun.png" alt="">
+                                        <img src="index/images/lego-seungjun.png" alt="">
                                         <h4>최승준</h4>
                                         <span>TEAM-MEMBER</span>
                                     </div>
@@ -63,7 +63,7 @@
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-sungmin.png" alt="" style = "width : 300px;">
+                                                <img src="index/images/lego-sungmin.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
@@ -76,7 +76,7 @@
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-hyunwoo.png" alt="" style = "width : 300px;">
+                                                <img src="index/images/lego-hyunwoo.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
@@ -89,7 +89,7 @@
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-minji.png" alt="" style="width: 300px;">
+                                                <img src="index/images/lego-minji.png" alt="" style="width: 300px;">
                                             </div>
                                         </div>
                                     </li>
@@ -102,7 +102,7 @@
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-sohee.png" alt="" style = "width : 300px;">
+                                                <img src="index/images/lego-sohee.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
@@ -115,7 +115,7 @@
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-seungjun.png" alt="" style = "width : 300px;">
+                                                <img src="index/images/lego-seungjun.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
