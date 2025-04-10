@@ -52,7 +52,7 @@
     </div>
 </section>
 
-<section class="our-team">
+<section class="our-team" style = "margin-bottom : 40px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div id ="legend-container" class = "legend-div"></div>
-                                <canvas id="microdustChart" style="width: 100%; max-width: 1200px"></canvas>
+                                <canvas id="microdustChart" style="width: 100%; max-width: 1200px; margin-bottom : 40px;"></canvas>
                             </div>
                         </div>
                     </div>
