@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<jsp:include page = "/header.jsp"></jsp:include>
+<jsp:include page = "header.jsp"></jsp:include>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <section class="page-heading">
     <div class="container">
@@ -58,6 +59,8 @@
                                             <div class="left-content">
                                                 <h4>김성민</h4>
                                                 <p>문제해결과 최적화에 관심있는 백엔드 개발자 김성민 입니다.</p>
+                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
                                                 <img src="assets/images/lego-sungmin.png" alt="" style = "width : 300px;">
@@ -69,6 +72,8 @@
                                             <div class="left-content">
                                                 <h4>김현우</h4>
                                                 <p>천천히, 그러나 꾸준히 확실하게</p>
+                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
                                                 <img src="assets/images/lego-hyunwoo.png" alt="" style = "width : 300px;">
@@ -79,10 +84,12 @@
                                         <div>
                                             <div class="left-content">
                                                 <h4>우민지</h4>
-                                                <p>세심한 관찰과 경험에 대한 높은 개방성으로 더 나은 경험을 설계하는 개발자를 꿈꿉니다. </p>
+                                                <p>세심한 관찰과 경험에 대한 높은 개방성으로 더 나은 경험을 설계하는 개발자를 꿈꿉니다.</p>
+                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/lego-minji.png" alt=""  style = "width : 300px;">
+                                                <img src="assets/images/lego-minji.png" alt="" style="width: 300px;">
                                             </div>
                                         </div>
                                     </li>
@@ -91,6 +98,8 @@
                                             <div class="left-content">
                                                 <h4>임소희</h4>
                                                 <p>더 나은 기술과 지식을 쌓아 성장하는 개발자가 되고 싶은 임소희입니다.</p>
+                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
                                                 <img src="assets/images/lego-sohee.png" alt="" style = "width : 300px;">
@@ -102,6 +111,8 @@
                                             <div class="left-content">
                                                 <h4>최승준</h4>
                                                 <p>일단 되게 하고 좋게 하고 도움되게 만들자!</p>
+                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
                                                 <img src="assets/images/lego-seungjun.png" alt="" style = "width : 300px;">
@@ -123,17 +134,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="https://github.com/ee-jo-webpage/teampage" target="_blank"><i class="fab fa-github"></i></a></li>
                 </ul>
             </div>
             <div class="col-lg-12">
-                <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
-
-                    <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                <p class="copyright" style = "color :black; letter-spacing: -0.7px;  margin-top : 0; margin-bottom:40px; font-size: 0.8em ">Copyright © 2024 Team E-SOHN-JAVA-JO. All Rights Reserved.
+                    <br>KOSA 인스웨이브 시스템즈 1기 "E 손 JAVA 조"</p>
             </div>
         </div>
     </div>
