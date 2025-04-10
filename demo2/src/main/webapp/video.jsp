@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <jsp:include page = "header.jsp"></jsp:include>
-
 <section class="get-info">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
                 <video id="video-collection" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" autoplay muted loop playsinline>
-                    <source src="assets/videos/sunflowers.mp4" type="video/mp4">
+                    <source src="video/videos/sunflowers.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="col-lg-4 align-self-center">
@@ -16,7 +15,7 @@
                     <h4>Our <em>Video Collection</em></h4>
                 </div>
                 <div class="playlist-container" style="max-height: 350px; overflow-y: auto;">
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/sunflowers.mp4', 'Sunflowers Video')">
+                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('video/videos/sunflowers.mp4', 'Sunflowers Video')">
                         <div class="mr-3" style="min-width: 50px;">
                             <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
                         </div>
@@ -25,7 +24,7 @@
                             <small class="text-muted">01:30 • Nature</small>
                         </div>
                     </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('https://www.youtube.com/watch?v=6VsErZsXcuU', 'Educational Content')">
+                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('video/videos/pie.mp4', 'Autumn Baking')">
                         <div class="mr-3" style="min-width: 50px;">
                             <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
                         </div>
@@ -34,7 +33,7 @@
                             <small class="text-muted">03:45 •  Culinary Arts</small>
                         </div>
                     </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/book.mp4', 'Course Introduction')">
+                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('video/videos/book.mp4', 'Beach Serenity')">
                         <div class="mr-3" style="min-width: 50px;">
                             <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
                         </div>
@@ -43,7 +42,7 @@
                             <small class="text-muted">02:15 • Relaxation</small>
                         </div>
                     </div>
-                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/tennis.mp4', 'Student Testimonials')">
+                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('video/videos/tennis.mp4', 'Clay Court Tennis')">
                         <div class="mr-3" style="min-width: 50px;">
                             <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
                         </div>
@@ -52,7 +51,7 @@
                             <small class="text-muted">04:10 • Sports</small>
                         </div>
                     </div>
-                    <div class="playl                                                                                                                                        ist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/steak.mp4', 'Campus Tour')">
+                    <div class="playlist-item d-flex align-items-center p-2 mb-2" style="background-color: #f8f9fa; border-radius: 5px; cursor: pointer;" onclick="playVideo('assets/videos/steak.mp4', 'Barbecue Mastery')">
                         <div class="mr-3" style="min-width: 50px;">
                             <i class="fa fa-play-circle" style="font-size: 24px; color: #dc8cdb;"></i>
                         </div>
