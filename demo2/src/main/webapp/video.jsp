@@ -2,19 +2,6 @@
          pageEncoding="UTF-8"%>
 <jsp:include page = "header.jsp"></jsp:include>
 
-<section class="page-heading">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="header-text">
-                    <h4>More About Us</h4>
-                    <h1>About Us</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="get-info">
     <div class="container">
         <div class="row">
@@ -75,30 +62,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="contact-us our-office">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-lg-12">
-                <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
-
-                    <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
             </div>
         </div>
     </div>
