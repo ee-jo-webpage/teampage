@@ -125,6 +125,8 @@
         </section>
     </div>
 
+    <jsp:include page="../common/footer.jsp"/>
+
     <!-- 사용자 정의 기능 포함 (게시글 목록, 수정, 삭제 등 처리) -->
     <script src="./js/custom.js"></script>
 
