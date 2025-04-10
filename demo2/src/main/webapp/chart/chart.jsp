@@ -81,7 +81,7 @@
 
 <script src="../assets/js/isotope.min.js"></script>
 <script src="../assets/js/owl-carousel.js"></script>
-<script src="../assets/js/lightbox.js"></script>
+<script src="../assets/js/lightbSox.js"></script>
 <script src="../assets/js/tabs.js"></script>
 <script src="../assets/js/video.js"></script>
 <script src="../assets/js/slick-slider.js"></script>
@@ -98,7 +98,7 @@
 
         if (isAnimate) {
             $('body, html').animate({
-                    scrollTop: reqSectionPos },
+                    scrollTop: reqectionPos },
                 800);
         } else {
             $('body, html').scrollTop(reqSectionPos);
