@@ -1,0 +1,40 @@
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+.social-links a.personal-website {
+    background-color: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.social-links a.personal-website:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.social-links i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.social-links a.github-link i,
+.social-links a.linkedin-link i {
+    font-size: 24px;
+}
