@@ -312,7 +312,7 @@ function renderCalendar() {
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         locale: 'ko',
-        aspectRatio: 1.3,
+        aspectRatio: 1.0,
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',

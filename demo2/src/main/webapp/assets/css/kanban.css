@@ -1,6 +1,6 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background: #f3e8ff;
+    background: #ffffff;
     margin: 40px;
     padding: 0;
     color: #333;
@@ -86,15 +86,6 @@ section #kanban-section {
     font-size: 1rem;
 }
 
-/*.task-card {*/
-/*    margin-bottom: 10px;*/
-/*    background-color: #fff;*/
-/*    border: 1px solid #ddd6fe;*/
-/*    border-radius: 1rem;*/
-/*    padding: 1rem;*/
-/*    box-shadow: 0 2px 6px rgba(124, 58, 237, 0.05);*/
-/*    transition: box-shadow 0.2s ease;*/
-/*}*/
 .task-card {
     margin-bottom: 10px;
     background-color: #fff;
