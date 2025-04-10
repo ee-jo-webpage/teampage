@@ -25,29 +25,29 @@
                             <div class="col-lg-12">
                                 <div class="menu">
                                     <div class="active">
-                                        <img src="assets/images/team-member-thumb-01.jpg" alt="">
-                                        <h4>Ruby Foster</h4>
-                                        <span>CEO-FOUNDER</span>
+                                        <img src="assets/images/lego-sungmin.png" alt="">
+                                        <h4>김성민</h4>
+                                        <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/team-member-thumb-03.jpg" alt="">
-                                        <h4>Luis Oconnell</h4>
-                                        <span>CEO-FOUNDER</span>
+                                        <img src="assets/images/lego-hyunwoo.png" alt="">
+                                        <h4>김현우</h4>
+                                        <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/team-member-thumb-02.jpg" alt="">
-                                        <h4>Jackie Riggs</h4>
-                                        <span>CEO-FOUNDER</span>
+                                        <img src="assets/images/lego-minji.png" alt="">
+                                        <h4>우민지</h4>
+                                        <span>TEAM-LEADER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/team-member-thumb-04.jpg" alt="">
-                                        <h4>Alfred Small</h4>
-                                        <span>CEO-FOUNDER</span>
+                                        <img src="assets/images/lego-sohee.png" alt="">
+                                        <h4>임소희</h4>
+                                        <span>TEAM-MEMBER</span>
                                     </div>
                                     <div>
-                                        <img src="assets/images/team-member-thumb-05.jpg" alt="">
-                                        <h4>Denis Mitchel</h4>
-                                        <span>CEO-FOUNDER</span>
+                                        <img src="assets/images/lego-seungjun.png" alt="">
+                                        <h4>최승준</h4>
+                                        <span>TEAM-MEMBER</span>
                                     </div>
                                 </div>
                             </div>
@@ -56,85 +56,55 @@
                                     <li class="active">
                                         <div>
                                             <div class="left-content">
-                                                <h4>Ruby Foster</h4>
-                                                <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan kogi freegan bicycle rights try-hard green juice probably.</p>
-                                                <span><a href="#">Facebook</a></span>
-                                                <span><a href="#">Twitter</a></span>
-                                                <span class="last-span"><a href="#">Linkedin</a></span>
-                                                <div class="text-button">
-                                                    <a href="contact-us.html">Contact Member</a>
-                                                </div>
+                                                <h4>김성민</h4>
+                                                <p>문제해결과 최적화에 관심있는 백엔드 개발자 김성민 입니다.</p>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/team-member-01.jpg" alt="">
+                                                <img src="assets/images/lego-sungmin.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="left-content">
-                                                <h4>Luis Oconnell</h4>
-                                                <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan kogi freegan bicycle rights try-hard green juice probably.</p>
-                                                <span><a href="#">Facebook</a></span>
-                                                <span><a href="#">Twitter</a></span>
-                                                <span class="last-span"><a href="#">Linkedin</a></span>
-                                                <div class="text-button">
-                                                    <a href="contact-us.html">Contact Member</a>
-                                                </div>
+                                                <h4>김현우</h4>
+                                                <p>천천히, 그러나 꾸준히 확실하게</p>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/team-member-03.jpg" alt="">
+                                                <img src="assets/images/lego-hyunwoo.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="left-content">
-                                                <h4>Jackie Riggs</h4>
-                                                <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan kogi freegan bicycle rights try-hard green juice probably.</p>
-                                                <span><a href="#">Facebook</a></span>
-                                                <span><a href="#">Twitter</a></span>
-                                                <span class="last-span"><a href="#">Linkedin</a></span>
-                                                <div class="text-button">
-                                                    <a href="contact-us.html">Contact Member</a>
-                                                </div>
+                                                <h4>우민지</h4>
+                                                <p>세심한 관찰과 경험에 대한 높은 개방성으로 더 나은 경험을 설계하는 개발자를 꿈꿉니다. </p>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/team-member-02.jpg" alt="">
+                                                <img src="assets/images/lego-minji.png" alt=""  style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="left-content">
-                                                <h4>Alfred Small</h4>
-                                                <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan kogi freegan bicycle rights try-hard green juice probably.</p>
-                                                <span><a href="#">Facebook</a></span>
-                                                <span><a href="#">Twitter</a></span>
-                                                <span class="last-span"><a href="#">Linkedin</a></span>
-                                                <div class="text-button">
-                                                    <a href="contact-us.html">Contact Member</a>
-                                                </div>
+                                                <h4>임소희</h4>
+                                                <p>더 나은 기술과 지식을 쌓아 성장하는 개발자가 되고 싶은 임소희입니다.</p>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/team-member-04.jpg" alt="">
+                                                <img src="assets/images/lego-sohee.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
                                             <div class="left-content">
-                                                <h4>Dennis Mitchel</h4>
-                                                <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan kogi freegan bicycle rights try-hard green juice probably.</p>
-                                                <span><a href="#">Facebook</a></span>
-                                                <span><a href="#">Twitter</a></span>
-                                                <span class="last-span"><a href="#">Linkedin</a></span>
-                                                <div class="text-button">
-                                                    <a href="contact-us.html">Contact Member</a>
-                                                </div>
+                                                <h4>최승준</h4>
+                                                <p>일단 되게 하고 좋게 하고 도움되게 만들자!</p>
                                             </div>
                                             <div class="right-image">
-                                                <img src="assets/images/team-member-05.jpg" alt="">
+                                                <img src="assets/images/lego-seungjun.png" alt="" style = "width : 300px;">
                                             </div>
                                         </div>
                                     </li>
