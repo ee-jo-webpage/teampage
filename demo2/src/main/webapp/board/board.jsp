@@ -21,10 +21,13 @@
 
             <h1>DOS Board</h1>
 
-            <!-- 글쓰기 버튼 -->
+            <!-- 글쓰기 버튼, 검색창 -->
             <div class="btn-wrapper">
+                <input type="text" id="search-input" placeholder="제목 또는 작성자 검색" />
+                <div class="btn-div" id="search-button">[ 검색 ]</div>
                 <div id="openCreateModal" class="btn-div">[ 글쓰기 ]</div>
             </div>
+
             <!-- 게시판 -->
             <div class="boxed defaultbox">
                 <table class="boxed defaultbox boxed_shadow">
