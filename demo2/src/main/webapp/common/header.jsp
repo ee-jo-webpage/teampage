@@ -23,7 +23,7 @@
                 <li><a href="contact-us.html">Contact Us</a></li>
               </ul>
             </li>
-            <li><a href="../geolocation/geolocation.jsp">Board</a></li>
+            <li><a href="../board/board.jsp">Board</a></li>
             <li><a href="index.html">Contact Us</a></li>
           </ul>
           <a class='menu-trigger'>

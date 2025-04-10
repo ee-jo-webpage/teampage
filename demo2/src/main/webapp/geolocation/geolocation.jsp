@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GEO Location</title>
 
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-eduwell-style.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
-    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <jsp:include page="../common/head.jsp"/>
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 <body class="geolocation-page">
