@@ -14,18 +14,18 @@ let deleteTargetId = null;
 // 공통 유틸 함수
 // =========================
 
-/** 모달 열고/닫기 */
+/* 모달 열고/닫기 */
 function toggleModal(id, show = true) {
     const modal = document.getElementById(id);
     if (modal) modal.style.display = show ? "flex" : "none";
 }
 
-/** post ID로 게시글 찾기 */
+/* post ID로 게시글 찾기 */
 function getPostById(id) {
     return posts.find(p => p.id === id);
 }
 
-/** form 안의 input/textarea 값 객체로 추출 */
+/* form 안의 input/textarea 값 객체로 추출 */
 function getFormData(formId) {
     const form = document.getElementById(formId);
     const data = {};
@@ -37,7 +37,7 @@ function getFormData(formId) {
     return data;
 }
 
-/** 폼 입력 초기화 */
+/* 폼 입력 초기화 */
 function clearForm(formId) {
     const form = document.getElementById(formId);
     if (form) form.reset();
