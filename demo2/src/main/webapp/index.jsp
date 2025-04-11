@@ -59,7 +59,7 @@
                                             <div class="left-content">
                                                 <h4>김성민</h4>
                                                 <p>문제해결과 최적화에 관심있는 백엔드 개발자 김성민 입니다.</p>
-                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="./individual-webpages/ksm/ksm/index.html" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
@@ -72,7 +72,7 @@
                                             <div class="left-content">
                                                 <h4>김현우</h4>
                                                 <p>천천히, 그러나 꾸준히 확실하게</p>
-                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="./individual-webpages/khw/webapp/index.html" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
@@ -98,7 +98,7 @@
                                             <div class="left-content">
                                                 <h4>임소희</h4>
                                                 <p>더 나은 기술과 지식을 쌓아 성장하는 개발자가 되고 싶은 임소희입니다.</p>
-                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="./individual-webpages/limsohee/webapp/index.html" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">
@@ -111,7 +111,7 @@
                                             <div class="left-content">
                                                 <h4>최승준</h4>
                                                 <p>일단 되게 하고 좋게 하고 도움되게 만들자!</p>
-                                                <a href="#" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
+                                                <a href="./individual-webpages/ChoiSJ/webapp/index.html" style = "margin-right : 30px;"> <i class="fas fa-home"  style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                                 <a href="#"> <i class="fab fa-github" style = "font-size: 20px; color : #dc8cdb;"></i></a>
                                             </div>
                                             <div class="right-image">

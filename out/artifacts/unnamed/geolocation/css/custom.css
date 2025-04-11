@@ -1,0 +1,181 @@
+/* 공통 */
+body.geolocation-page section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+body.geolocation-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 날씨 위젯 스타일 */
+body.geolocation-page section#weather-widget {
+    margin-top: 120px;
+}
+
+body.geolocation-page section#weather-widget,
+body.geolocation-page section#recommendation {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+body.geolocation-page #current-weather img {
+    margin-top: 8px;
+    width: 100px;
+}
+
+body.geolocation-page #hourly-weather > div {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* 지도 섹션 */
+body.geolocation-page section#map-section {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #000;
+    margin-top: 40px;
+}
+
+body.geolocation-page #searchBox {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+body.geolocation-page #searchBox input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+body.geolocation-page #searchBox button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+}
+
+body.geolocation-page #map {
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+body.geolocation-page #placesList li {
+    padding: 8px;
+    margin: 6px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.geolocation-page #pagination button {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e90ff;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+body.geolocation-page #pagination button:disabled {
+    background-color: #a0cfff;
+    cursor: default;
+}
+
+body.geolocation-page .current-weather-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.geolocation-page .current-weather-box .weather-text {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+body.geolocation-page .current-weather-box .updated-time {
+    font-size: 0.9rem;
+    color: #555;
+    /*margin-top: 8px;*/
+}
+
+body.geolocation-page .current-weather-box .weather-icon img {
+    width: 80px;
+    height: auto;
+}
+
+body.geolocation-page #location-info {
+    margin-bottom: 20px;
+}
+
+.clothing-guide {
+    background-color: #f8f9fc;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    margin: 20px auto;
+}
+
+.temp-range {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #2c3e50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.clothing-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.description .tip {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.description .items {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-us,
+.our-office {
+    max-width : 100% !important;
+    margin: auto !important;
+    padding-right: 0.75em !important;
+    padding-left: 0.75em !important;
+}
