@@ -3,7 +3,7 @@ const API_KEY = "16776f0c191c6722a1bcbc251fa9e8ad"; // OpenWeather API Key
 const clothingData = [
     { range: "28℃ 이상", tip: "민소매, 반팔, 린넨으로 시원하게!", items: "민소매, 반팔, 반바지, 린넨 원단", icon: "./images/sleeveless.png" },
     { range: "23℃ ~ 27℃", tip: "반팔 입기 딱 좋은 날씨!", items: "반팔, 얇은 셔츠, 면바지 등", icon: "./images/tshirt.png" },
-    { range: "20℃ ~ 22℃", tip: "반팔은 이제 그만! 긴 옷 입기", items: "얇은 가디건, 긴팔티, 블라우스, 청바지 등", icon: "./images/shirt.png" },
+    { range: "20℃ ~ 22℃", tip: "반팔은 이제 그만! 긴 옷 입기", items: "얇은 가디건, 긴팔티, 블라우스, 청바지 등", icon: "./images/shirts.png" },
     { range: "17℃ ~ 19℃", tip: "일교차 대비 외투 챙기기", items: "가디건, 니트, 맨투맨, 청바지 등", icon: "./images/cardigan.png" },
     { range: "12℃ ~ 16℃", tip: "감기 조심! 외투 필수", items: "얇은 자켓, 간절기 야상, 가디건 등", icon: "./images/jacket.png" },
     { range: "10℃ ~ 11℃", tip: "겹겹이 레이어드 하기", items: "트렌치코트, 바람막이, 니트 등", icon: "./images/trench.png" },
