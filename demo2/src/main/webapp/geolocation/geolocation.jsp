@@ -52,6 +52,8 @@
 
     </section>
 
+    <jsp:include page="../common/footer.jsp"/>
+
     <!-- 스크립트 -->
     <script src="./js/kakao-map.js"></script>
     <script src="./js/weather-widget.js"></script>

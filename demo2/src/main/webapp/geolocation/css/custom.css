@@ -171,3 +171,11 @@ body.geolocation-page #location-info {
     font-size: 0.9rem;
     color: #555;
 }
+
+.contact-us,
+.our-office {
+    max-width : 100% !important;
+    margin: auto !important;
+    padding-right: 0.75em !important;
+    padding-left: 0.75em !important;
+}
