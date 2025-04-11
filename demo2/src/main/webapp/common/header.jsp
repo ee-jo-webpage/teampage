@@ -12,19 +12,12 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="../geolocation/geolocation.jsp">GeoLocation</a></li>
-                        <li><a href="index.html">Courses</a></li>
-                        <li class="has-sub">
-                            <a href="javascript:void(0)">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="our-services.html">Our Services</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../board/board.jsp">Board</a></li>
-                        <li><a href="index.html">Contact Us</a></li>
+                        <li><a href="${pageContext.request.contextPath}/" class="active">Home</a></li>
+                        <li><a href="${pageContext.request.contextPath}/video/video.jsp">Video</a></li>
+                        <li><a href="${pageContext.request.contextPath}/kanban.jsp">Kanban</a></li>
+                        <li><a href="${pageContext.request.contextPath}/geolocation/geolocation.jsp">Geolocation</a></li>
+                        <li><a href="${pageContext.request.contextPath}/board/board.jsp">Board</a></li>
+                        <li><a href="${pageContext.request.contextPath}/login/login.jsp">Login</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>

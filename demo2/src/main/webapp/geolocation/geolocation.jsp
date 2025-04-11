@@ -51,7 +51,6 @@
         </div>
 
     </section>
-
     <jsp:include page="../common/footer.jsp"/>
 
     <!-- 스크립트 -->
